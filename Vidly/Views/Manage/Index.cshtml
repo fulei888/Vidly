@@ -1,9 +1,13 @@
 ﻿@model Vidly.Models.IndexViewModel
 @{
-    ViewBag.Title = "Manage";
+    ViewBag.Title = "Home Page";
 }
 
 <h2>@ViewBag.Title.</h2>
+<div class="row">
+    <a href="@Url.Action("Details", "CheckingAccount")" class="btn btn-primary btn-large btn-block"><span class="glyphicon glyphicon-question-sign"></span></span>Balance Inquiry</a>
+
+</div>
 
 <p class="text-success">@ViewBag.StatusMessage</p>
 <div>
